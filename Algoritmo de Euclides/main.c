@@ -33,3 +33,11 @@ int mcd(fraccion *f){
     return a;
 }
 
+fraccion reduce(fraccion *d){
+    int maxi = mcd(d);
+    fraccion mini;
+    mini.numerador = d -> numerador / maxi;
+    mini.denominador = d ->denominador / maxi;
+    return mini;
+}
+
