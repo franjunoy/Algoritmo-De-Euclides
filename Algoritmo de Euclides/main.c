@@ -21,5 +21,15 @@ int main(){
 return 0;
 }
 
-
+int mcd(fraccion *f){
+    int r, a, b;
+    a = f -> numerador;
+    b = f -> denominador;
+    while(b!=0){
+        r = b;
+        b = a % b;
+        a = r;
+    }
+    return a;
+}
 
