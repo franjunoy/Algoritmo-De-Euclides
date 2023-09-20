@@ -41,3 +41,8 @@ fraccion reduce(fraccion *d){
     return mini;
 }
 
+void muestraFraccion (fraccion c){
+    printf("La fracci�n reducida es %d/%d \n", c.numerador, c.denominador);
+    printf("\n");
+
+}
